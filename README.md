@@ -20,21 +20,21 @@ Code committed to a repo such as Github.
 
 ## Installation and Set-up of Airflow in local system.
 * To verify the existence of latest version of python and pip,
-''' python3 -V '''
-''' pip --version '''
+``` python3 -V ```
+``` pip --version ```
 * To create a python virtual environment,
-''' python3 -m venv venv1 '''
+``` python3 -m venv venv1 ```
 * To activate the virtual environment,
-''' source venv1/bin/activate '''
+``` source venv1/bin/activate ```
 * To install the apache-airflow latest version with the constraints,
-''' pip3 install 'apache-airflow==2.5.3' --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.5.3/constraints-3.7.txt" '''
+``` pip3 install 'apache-airflow==2.5.3' --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.5.3/constraints-3.7.txt" ```
 * To create a user to access the web UI of apache-airflow,
-''' airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin '''
+``` airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin ```
 * To set the path at airflow.cfg file,
-''' export AIRFLOW_HOME=~/airflow '''
+``` export AIRFLOW_HOME=~/airflow ```
 * To initiate the airflow database,
-''' airflow db init '''
+``` airflow db init ```
 * To activate the webserver at 'http://localhost:8080'
-''' airflow webserver -p 8080 '''
+``` airflow webserver -p 8080 ```
 * To run the airflow scheduler,
-''' airflow scheduler '''
+``` airflow scheduler ```
