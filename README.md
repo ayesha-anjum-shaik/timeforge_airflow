@@ -38,3 +38,19 @@ Code committed to a repo such as Github.
 ``` airflow webserver -p 8080 ```
 * To run the airflow scheduler,
 ``` airflow scheduler ```
+## Database activation to access the dataset
+* To install the postgreSQL database,
+``` sudo apt install postgresql ```
+* To start the porstgreSQL service,
+``` sudo su - postgres ```
+``` sudo service postgresql start ```
+``` psql ```
+* To know your database details,
+``` \conninfo ```
+* To create a database with similar columns and their datatypes,
+``` CREATE TABLE store_sales(location_id integer,belongs_to date,totala float); ```
+* To copy the data from our local csv file to database,
+``` COPY store_sales(location_id,belongs_to,totala) FROM '/tmp/project/store_sales.csv' DELIMITER ',' CSV HEADER; ```
+
+* Similar steps in Azure and also, make sure to add the inbound port rule to the database, airflow web ui and allow the action in networking tab of virtual machine of Azure.
+
