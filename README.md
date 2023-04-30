@@ -56,3 +56,4 @@ Import the provided sales data csv from three retail stores into a SQL database 
 
 * Similar steps in Azure and also, make sure to add the inbound port rule to the database, airflow web ui and allow the action in networking tab of virtual machine of Azure.
 
+Here, uploading the only required files projectcode.py is the code used to generate the appropriate model parameters after training the model. The code is stored at '/Users/ayeshashaik/Desktop/InternProject/venv_project/lib/python3.9/site-packages/airflow/example_dags/projectcode.py' and the related logs are '/Users/ayeshashaik/Desktop/InternProject/airflow/logs/scheduler/2023-04-27/native_dags/example_dags/attempt=1.log' and '/Users/ayeshashaik/Desktop/InternProject/airflow/logs/scheduler/2023-04-27/native_dags/example_dags/attempt=2.log'
