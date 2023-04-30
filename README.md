@@ -15,8 +15,7 @@ Import the provided sales data csv from three retail stores into a SQL database 
 * A Python script with the necessary Airflow DAG (Directed Acyclic Graph) definition that automates the described steps, utilizing Python idioms where appropriate. 
 * A configuration file (e.g., .ini, .yaml, or .json) to store necessary configurations.
 * Python logging setup to log relevant information, including model selection and evaluation results
-* A README file describing setup and running the DAG in a Python virtual environment.
-Code committed to a repo such as Github.
+* A README file describing setup and running the DAG in a Python virtual environment. Code committed to a repo such as Github.
 
 ## Installation and Set-up of Airflow in local system.
 * To verify the existence of latest version of python and pip,
@@ -38,6 +37,9 @@ Code committed to a repo such as Github.
 ``` airflow webserver -p 8080 ```
 * To run the airflow scheduler,
 ``` airflow scheduler ```
+* To find and kill the processes already running,
+``` ps -ef | grep 8080 ```
+```kill -9 <pid> ```
 ## Database activation to access the dataset
 * To install the postgreSQL database,
 ``` sudo apt install postgresql ```
